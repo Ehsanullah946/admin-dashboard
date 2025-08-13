@@ -12,7 +12,7 @@ import {
  } from "./pages";
 
 const App = () => {
-  const activeMenue = false;
+  const activeMenue = true;
    return (
     <div>
     <BrowserRouter>
@@ -52,7 +52,6 @@ const App = () => {
                <Route path='/editor' element={<Editor />} />
                <Route path='/calender' element={<Calendar />} />
                <Route path='/color-picker' element={<ColorPicker />} />
-               
                {/* charts */}
                <Route path='/line' element={<Line />} />
                <Route path='/area' element={<Area />} />
@@ -61,9 +60,7 @@ const App = () => {
                <Route path='/financial' element={<Financial />} />
                <Route path='/color-mapping' element={<ColorMapping />} />
                <Route path='/pyramid' element={<Pyramid />} />
-               <Route path='/stacked' element={<Stacked />} />
-
-               
+               <Route path='/stacked' element={<Stacked />} />             
              </Routes>
            </div>
         </div>
