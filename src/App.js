@@ -6,7 +6,7 @@ import "./App.css";
 
 import { Sidebar, Footer, ThemSettings, Navbar } from "./components";
 import {
-  Ecommerce, Orders, Customers, Calender,
+  Ecommerce, Orders, Customers, Calendar,
   ColorPicker, Editor, Employees, Kanban, Area, Bar,
   ColorMapping,Financial,Line,Pie,Pyramid,Stacked
  } from "./pages";
@@ -50,7 +50,7 @@ const App = () => {
                {/* APP */}
                <Route path='/kanban' element={<Kanban />} />
                <Route path='/editor' element={<Editor />} />
-               <Route path='/calender' element={<Calender />} />
+               <Route path='/calender' element={<Calendar />} />
                <Route path='/color-picker' element={<ColorPicker />} />
                
                {/* charts */}
@@ -58,7 +58,7 @@ const App = () => {
                <Route path='/area' element={<Area />} />
                <Route path='/bar' element={<Bar />} />
                <Route path='/pie' element={<Pie />} />
-               <Route path='/finantial' element={<Finantial />} />
+               <Route path='/financial' element={<Financial />} />
                <Route path='/color-mapping' element={<ColorMapping />} />
                <Route path='/pyramid' element={<Pyramid />} />
                <Route path='/stacked' element={<Stacked />} />
