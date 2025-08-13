@@ -11,8 +11,12 @@ import {
   ColorMapping,Financial,Line,Pie,Pyramid,Stacked
  } from "./pages";
 
+import { useStateContext } from './context/ContextProvider';
+ 
 const App = () => {
-  const activeMenue = true;
+  
+  const { activeMenue } = useStateContext();
+
    return (
     <div>
     <BrowserRouter>
@@ -32,7 +36,7 @@ const App = () => {
              <div className='dark:bg-secondary-dark-bg w-0'>
                 <Sidebar/>
              </div>}
-           <div className={`dark:bg-main-bg bg-main-bg main-h-screen w-full ${activeMenue? "md:ml-72": 'flex-2'} `}>
+           <div className={`dark:bg-main-bg bg-main-bg main-h-screen w-full ${activeMenue ? "md:ml-72" : 'flex-2'} `}>
              <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg w-full navbar '>
                <Navbar/>
              </div>
