@@ -4,7 +4,13 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import './App.css';
 
-import { Sidebar, Footer, ThemSettings, Navbar } from './components';
+import {
+  Sidebar,
+  Footer,
+  ThemSettings,
+  Navbar,
+  ThemeSettings,
+} from './components';
 import {
   Ecommerce,
   Orders,
@@ -64,6 +70,7 @@ const App = () => {
             </div>
 
             <div>
+              <ThemeSettings />
               <Routes>
                 <Route path="/" element={<Ecommerce />} />
                 <Route path="/ecommerce" element={<Ecommerce />} />
